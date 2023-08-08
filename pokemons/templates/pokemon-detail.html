@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ block.super }}Pokemon details{% endblock title %}
+
+{% block content %}
+  <div class="container-fluid text-center">
+    <h1>{{ pokemon.name|capfirst }}</h1>
+    <img src="{{ pokemon.image }}" alt="">
+
+
+    <h4>Description:</h4>
+    <p>{{ pokemon.description }}</p>
+
+    <h4>Abilities:</h4>
+    <p class="mb-3">{{ pokemon.abilities }}</p>
+
+    <h4>Stats:</h4>
+    <p>{{ pokemon.stats }}</p>
+
+    <h4>Moves:</h4>
+    <p>{{ pokemon.movements }}</p>
+  </div>
+{% endblock content %}
