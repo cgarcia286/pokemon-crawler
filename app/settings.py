@@ -124,3 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# API integration
+POKEAPI_V2_BASE_URL = 'https://pokeapi.co/api/v2/'
